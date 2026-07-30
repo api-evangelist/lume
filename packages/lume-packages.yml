@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lume.ai + PyPI + npm + github.com/Lume-ai
+packages:
+- language: typescript
+  registry: npm
+  name: "@lume-ai/typescript-sdk"
+  url: https://www.npmjs.com/package/@lume-ai/typescript-sdk
+  install: npm install @lume-ai/typescript-sdk
+  version: 5.3.2
+  repository: https://github.com/Lume-ai/typescript-sdk
+  description: Lume SDK for TypeScript to automate data mappings with AI.
+  official: true
+- language: python
+  registry: pypi
+  name: lume-py
+  url: https://pypi.org/project/lume-py/
+  install: pip install lume-py
+  import: lume
+  version: 0.1.32
+  repository: https://github.com/Lume-ai/lume_py
+  description: An SDK to connect to the Lume API (Enterprise; access may require a Lume representative).
+  official: true

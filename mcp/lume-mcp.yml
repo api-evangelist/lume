@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: derived
+status: candidate
+source: github.com/Lume-ai/typescript-sdk service surface (no OpenAPI published)
+notes: >-
+  No official hosted/remote MCP server was found for Lume. This is a candidate tool list derived
+  from the documented TypeScript SDK service surface (Pipeline, Jobs, Results, TargetSchema,
+  Workflow, Users) so an MCP server could be forged if the provider publishes an OpenAPI.
+server:
+  name: lume
+  transport: http
+tools:
+- name: run_pipeline
+  description: Trigger a Flow/Pipeline run over source data against a target schema.
+  source: typescript-sdk PipelineService
+- name: get_job_status
+  description: Poll the status of a transformation run/job.
+  source: typescript-sdk JobsService
+- name: get_results
+  description: Retrieve mapping results and metrics for a completed run.
+  source: typescript-sdk ResultsService
+- name: manage_target_schema
+  description: Create or inspect target schemas used for mapping.
+  source: typescript-sdk TargetSchemaService
+- name: manage_workflow
+  description: Organize and manage Flows/Workflows.
+  source: typescript-sdk WorkflowService

@@ -1,0 +1,21 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lume.ai/pages/libraries/python-ent/quickstart.md + typescript-sdk BaseService
+docs: https://docs.lume.ai/pages/documentation/getting_started/quickstart.md
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: LumeApiKey
+  type: apiKey
+  in: header
+  parameter_name: lume-api-key
+  description: >-
+    Per-account API key issued in the Lume application under Settings > API Keys. Sent on every
+    request in the lume-api-key request header. The Python SDK also reads it from the LUME_API_KEY
+    environment variable or via lume.init(api_key=...); the TypeScript SDK takes it in the Lume
+    constructor.
+  sources:
+  - packages/lume-packages.yml
+  - https://docs.lume.ai

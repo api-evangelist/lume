@@ -1,0 +1,35 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lume.ai + github.com/Lume-ai/typescript-sdk
+authentication:
+  style: api-key-header
+  header: lume-api-key
+  ref: authentication/lume-authentication.yml
+pagination:
+  style: paginated-response
+  response_envelope: PaginatedResponse
+  notes: >-
+    List endpoints return a PaginatedResponse<T> envelope in the TypeScript SDK (types/pagination).
+    Callers page through jobs/results rather than receiving unbounded arrays.
+webhooks:
+  supported: true
+  purpose: Delivery of run/workbook completion results to consumer endpoints.
+  ref: asyncapi/lume-webhooks.yml
+  docs: https://docs.lume.ai/pages/libraries/python-ent/examples/webhook-driven-app.md
+async_execution:
+  model: >-
+    Data transformations run asynchronously. A Flow/Pipeline run is triggered, then its status is
+    polled (Understanding Runs / Understanding Workbooks) or a webhook fires on completion, after
+    which results are fetched from the Results service.
+idempotency:
+  documented: false
+  notes: No idempotency-key contract is documented in the public docs or SDKs.
+error_handling:
+  ref: null
+  notes: >-
+    The Python SDK raises typed exceptions (see the Exceptions reference); no public RFC 9457
+    problem+json envelope is documented.
+versioning:
+  flow_versioning: >-
+    Flows are versioned in the product (e.g. customer_ingest:v1); the API itself does not publish a
+    documented version scheme.

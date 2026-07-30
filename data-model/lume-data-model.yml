@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: derived
+source: docs.lume.ai core concepts + github.com/Lume-ai/typescript-sdk services (no OpenAPI published)
+entities:
+- name: Flow
+  aka: [Pipeline, Project]
+  description: A reusable configuration mapping a source connector to a target schema.
+- name: FlowVersion
+  description: A versioned instance of a Flow (e.g. customer_ingest:v1).
+- name: TargetSchema
+  description: The internal schema that source data is normalized to.
+- name: Run
+  aka: [Job, Workbook]
+  description: A single asynchronous execution of a Flow over source data.
+- name: Result
+  aka: [Mapping]
+  description: The generated mappings, transformed records, metrics, and validation output of a Run.
+- name: User
+  description: An account member with a role/permission set.
+relationships:
+- from: Flow
+  type: has_one
+  to: TargetSchema
+  via: target_schema
+- from: Flow
+  type: has_many
+  to: FlowVersion
+  via: version
+- from: FlowVersion
+  type: has_many
+  to: Run
+  via: flow_version
+- from: Run
+  type: has_one
+  to: Result
+  via: run_id

@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lume.ai/pages/libraries/python-ent/examples/webhook-driven-app.md
+spec_type: Webhooks
+description: >-
+  Lume delivers transformation run results to consumer HTTP endpoints via webhooks. The documented
+  webhook-driven-app example shows a web application receiving a webhook when a run completes and
+  then fetching the run's results. No AsyncAPI document is published.
+events:
+- name: run.completed
+  trigger: A Flow/Pipeline run finishes processing.
+  delivery: HTTP POST to a consumer-configured webhook endpoint.
+  follow_up: Fetch results via the Results service using the run id.
+notes: >-
+  Event name is descriptive of the documented behavior; Lume does not publish a formal event
+  catalog or AsyncAPI spec.

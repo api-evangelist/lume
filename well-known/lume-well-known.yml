@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of Lume hosts
+notes: >-
+  No /.well-known/ discovery documents were found. The API host (api.lume.ai and the SDK default
+  prod.lume-terminus.com) returned 530 (origin down) at probe time; Lume joined Harvey AI in
+  March 2026.
+hosts:
+- host: https://lume.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+- host: https://docs.lume.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+- host: https://api.lume.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 530
+  - path: /.well-known/openid-configuration
+    status: 530
+  - path: /openapi.json
+    status: 530

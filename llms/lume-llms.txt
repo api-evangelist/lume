@@ -1,0 +1,40 @@
+# Documentation
+
+## Docs
+
+- [Building a Target Schema](https://docs.lume.ai/pages/documentation/flow_guides/building_target_schema.md): Learn how to create effective target schemas for your data transformations
+- [Taxonomy Mapping](https://docs.lume.ai/pages/documentation/flow_guides/classification.md): How to standardize categories using Lume
+- [Creating Descriptions](https://docs.lume.ai/pages/documentation/flow_guides/creating_descriptions.md): How to optimize your description to maximize accuracy
+- [Validation Errors](https://docs.lume.ai/pages/documentation/flow_guides/flagged_mappings.md): Understanding and parsing validation errors in mapping results
+- [Managing Flows](https://docs.lume.ai/pages/documentation/flow_guides/managing_pipelines.md): How to organize, manage, and leverage existing flows
+- [AI Prompting Guide: Best Practices](https://docs.lume.ai/pages/documentation/flow_guides/prompt_guide.md): Learn effective prompting techniques for Lume AI to optimize financial recasting, data transformation, and workflow automation.
+- [Understanding Runs](https://docs.lume.ai/pages/documentation/flow_guides/understanding_runs.md): Learn about runs, their statuses, and how they work in Lume
+- [Core Concepts](https://docs.lume.ai/pages/documentation/getting_started/prerequisites.md)
+- [Quickstart](https://docs.lume.ai/pages/documentation/getting_started/quickstart.md)
+- [Account Setup](https://docs.lume.ai/pages/documentation/getting_started/setup_account.md)
+- [Introduction](https://docs.lume.ai/pages/documentation/intro/welcome.md): Automate data mappings using AI
+- [Building a Target Schema](https://docs.lume.ai/pages/documentation/project_guides/building_target_schema.md): Learn how to create effective target schemas for your data transformations
+- [Core Concepts](https://docs.lume.ai/pages/documentation/project_guides/core_concepts.md)
+- [Creating Descriptions](https://docs.lume.ai/pages/documentation/project_guides/creating_descriptions.md): How to optimize your description to maximize accuracy
+- [Managing Projects](https://docs.lume.ai/pages/documentation/project_guides/managing_projects.md): How to organize, manage, and leverage existing projects
+- [AI Prompting Guide: Best Practices](https://docs.lume.ai/pages/documentation/project_guides/prompt_guide.md): Learn effective prompting techniques for Lume AI to optimize financial recasting, data transformation, and workflow automation.
+- [Understanding Workbooks](https://docs.lume.ai/pages/documentation/project_guides/understanding_workbooks.md): Learn about workbooks, their statuses, and how they work in Lume
+- [Security Overview](https://docs.lume.ai/pages/documentation/security/security.md)
+- [Frequently Asked Questions](https://docs.lume.ai/pages/knowledge_base/faq.md)
+- [User Permissions](https://docs.lume.ai/pages/knowledge_base/permissions/overview.md): Learn about the four main user roles in Lume
+- [Advanced Topics](https://docs.lume.ai/pages/libraries/python-ent/advanced.md): Techniques for building complex, production-grade workflows with Lume
+- [Exceptions](https://docs.lume.ai/pages/libraries/python-ent/api/classes/exceptions.md): Reference for custom exceptions raised by the Lume Python SDK.
+- [LumeRun](https://docs.lume.ai/pages/libraries/python-ent/api/classes/lumerun.md): Reference for the LumeRun object.
+- [Functions](https://docs.lume.ai/pages/libraries/python-ent/api/functions.md): Reference for top-level functions in the Lume Python SDK.
+- [API Overview](https://docs.lume.ai/pages/libraries/python-ent/api/overview.md): A high-level overview of the Lume Python SDK
+- [Core Concepts](https://docs.lume.ai/pages/libraries/python-ent/concepts.md): Understanding the core concepts behind the Lume Python SDK
+- [Accessing Run Metrics](https://docs.lume.ai/pages/libraries/python-ent/examples/accessing-run-metrics.md): How to access and interpret the detailed metrics and results from a completed run.
+- [Basic S3 Transformation](https://docs.lume.ai/pages/libraries/python-ent/examples/basic-s3-transformation.md): A complete example of processing CSV files from S3 and writing back to S3.
+- [Database Transformation](https://docs.lume.ai/pages/libraries/python-ent/examples/database-transformation.md): An example of processing data from a relational database like PostgreSQL or Snowflake.
+- [Webhook-Driven Application](https://docs.lume.ai/pages/libraries/python-ent/examples/webhook-driven-app.md): A complete example of a web application that uses webhooks to process run results.
+- [Python SDK Introduction](https://docs.lume.ai/pages/libraries/python-ent/introduction.md): Integrate and control your data transformation workflows with the Lume Python SDK
+- [Production Best Practices](https://docs.lume.ai/pages/libraries/python-ent/production.md): Guidance for building robust, production-grade data pipelines with Lume
+- [Python SDK Quickstart](https://docs.lume.ai/pages/libraries/python-ent/quickstart.md): Follow this guide to install the Lume Python SDK and run your first data transformation pipeline.
+- [Troubleshooting](https://docs.lume.ai/pages/libraries/python-ent/troubleshooting.md): Common errors and solutions when using the Lume Python SDK.
+- [Getting Started](https://docs.lume.ai/pages/libraries/typescript/introduction.md): Learn how to integrate using the Typescript Client Library
+- [Library Overview](https://docs.lume.ai/pages/libraries/typescript/overview.md): Overview of the functionalities in the Typescript Client Library

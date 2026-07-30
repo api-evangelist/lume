@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lume.ai/pages/documentation/security/security.md
+standards:
+- id: soc2-type1
+  conforms: true
+  evidence: "Security Overview: 'Lume is SOC 2 Type 1 and SOC 2 Type 2 Compliant.'"
+- id: soc2-type2
+  conforms: true
+  evidence: "Security Overview: 'Lume is SOC 2 Type 1 and SOC 2 Type 2 Compliant.'"
+- id: oauth2
+  conforms: false
+  evidence: API authenticates with a static header API key (lume-api-key), not OAuth2.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json error envelope documented.
+compliance_program:
+  certifications: [SOC 2 Type 1, SOC 2 Type 2]
+  url: https://docs.lume.ai/pages/documentation/security/security.md
