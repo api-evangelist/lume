@@ -1,8 +1,28 @@
 aid: lume
 name: Lume
-description: Lume is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Lume is an AI-powered customer data integration platform for software teams. Its models handle
+  schema discovery, suggest intelligent field-level data mappings, validate data quality, and
+  generate transformation code automatically, turning a manual data-onboarding process into a fast,
+  repeatable pipeline. Teams create Flows and Projects that map arbitrary source data (CSV/S3,
+  relational databases such as PostgreSQL or Snowflake, and API payloads) to their own internal
+  target schemas. Lume exposes a REST API and first-party Python and TypeScript SDKs, delivers run
+  results via webhooks, and is SOC 2 Type 1 and Type 2 compliant. Backed by General Catalyst, Khosla
+  Ventures, Floodgate, Soma Capital, and Y Combinator; in March 2026 Lume joined Harvey AI.
 url: https://raw.githubusercontent.com/api-evangelist/lume/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://app.lume.ai/assets/logo-256.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +31,82 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Data Integration
+- Data Mapping
+- ETL
+- Data Transformation
+- Artificial Intelligence
+- Schema Mapping
+- Data Quality
+- Developer Tools
+apis:
+- name: Lume API
+  description: >-
+    REST API for automating data mappings and transformations with AI. Create and run Flows,
+    manage target schemas, poll job/run status, and retrieve mapping results. Authenticated with a
+    per-account API key sent in the lume-api-key header.
+  humanURL: https://docs.lume.ai
+  baseURL: https://prod.lume-terminus.com/crud/
+  tags:
+  - Data Integration
+  - Data Mapping
+  - ETL
+  properties:
+  - type: Documentation
+    url: https://docs.lume.ai
+  - type: Authentication
+    url: authentication/lume-authentication.yml
+  - type: Conventions
+    url: conventions/lume-conventions.yml
+  - type: Webhooks
+    url: asyncapi/lume-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1
+common:
+- type: DeveloperPortal
+  url: https://docs.lume.ai
+- type: Documentation
+  url: https://docs.lume.ai
+- type: GettingStarted
+  url: https://docs.lume.ai/pages/documentation/getting_started/quickstart.md
+- type: LLMsTxt
+  url: llms/lume-llms.txt
+- type: Packages
+  url: packages/lume-packages.yml
+- type: SDKs
+  url: packages/lume-packages.yml
+- type: Authentication
+  url: authentication/lume-authentication.yml
+- type: Conventions
+  url: conventions/lume-conventions.yml
+- type: Webhooks
+  url: asyncapi/lume-webhooks.yml
+- type: Conformance
+  url: conformance/lume-conformance.yml
+- type: Compliance
+  url: https://docs.lume.ai/pages/documentation/security/security.md
+- type: DomainSecurity
+  url: security/lume-domain-security.yml
+- type: MCPServer
+  url: mcp/lume-mcp.yml
+- type: DataModel
+  url: data-model/lume-data-model.yml
+- type: GitHubOrganization
+  url: https://github.com/Lume-ai
+- type: SignUp
+  url: https://app.lume.ai
+- type: Login
+  url: https://app.lume.ai
+- type: Support
+  url: https://docs.lume.ai/pages/knowledge_base/faq.md
