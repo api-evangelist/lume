@@ -10,6 +10,17 @@ description: >-
   results via webhooks, and is SOC 2 Type 1 and Type 2 compliant. Backed by General Catalyst, Khosla
   Ventures, Floodgate, Soma Capital, and Y Combinator; in March 2026 Lume joined Harvey AI.
 url: https://raw.githubusercontent.com/api-evangelist/lume/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
