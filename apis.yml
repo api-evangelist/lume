@@ -86,6 +86,8 @@ x-enrichment:
   artifacts_added: 10
   pass: local-v1
 common:
+- type: Website
+  url: https://www.lume.ai/
 - type: DeveloperPortal
   url: https://docs.lume.ai
 - type: Documentation
